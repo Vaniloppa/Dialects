@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диалекты народов России</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fdf8ed;  /* цвет старой бумаги, как в описании */
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            color: #2c2a24;
+            line-height: 1.5;
+        }
+
+        /* общий контейнер */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+
+        /* шапка сайта (темно-зеленый фон) */
+        .header {
+            background: #2d4a3b;
+            padding: 30px 0 20px;
+            text-align: center;
+            border-bottom: 6px solid #b87b4f;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.4rem;
+            color: #fef7e0;
+            letter-spacing: 1px;
+        }
+        .header p {
+            color: #e0dccd;
+            font-style: italic;
+            margin-top: 8px;
+            font-size: 1rem;
+        }
+
+        /* навигационное меню (стикер) */
+        .nav {
+            background: #e9e2d0;
+            border-bottom: 1px solid #cec2aa;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            gap: 10px;
+            padding: 12px 0;
+        }
+        .nav ul li a {
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            background: #fffef7;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            color: #2d4a3b;
+            border: 1px solid #cbbf9f;
+            transition: 0.2s;
+        }
+        .nav ul li a:hover {
+            background: #b87b4f;
+            color: white;
+            border-color: #b87b4f;
+        }
+
+        /* секции — светлые карточки */
+        .section {
+            background: #fffef9;
+            border-radius: 28px;
+            padding: 30px 35px;
+            margin-bottom: 45px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+            border: 1px solid #ece2d2;
+        }
+        .section h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.9rem;
+            color: #2d4a3b;
+            border-left: 8px solid #b87b4f;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+        .section h3 {
+            font-size: 1.5rem;
+            margin: 20px 0 12px 0;
+            color: #5a6b4c;
+        }
+        .section h4 {
+            font-size: 1.2rem;
+            margin: 15px 0 8px;
+            color: #7e5a3c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fefcf5;
+        }
+        th, td {
+            border: 1px solid #dacfaf;
+            padding: 10px 12px;
+            vertical-align: top;
+        }
+        th {
+            background: #ebdfc7;
+            font-family: Arial, sans-serif;
+            color: #2d4a3b;
+        }
+        .dictionary-list {
+            background: #f9f4e8;
+            padding: 18px 22px;
+            border-radius: 24px;
+            margin: 20px 0;
+        }
+        .dictionary-list p {
+            margin: 8px 0;
+        }
+        .footnote {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #d9cfb2;
+            color: #5f5b4f;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 12px 16px;
+            }
+            .section {
+                padding: 20px;
+            }
+            .nav ul li a {
+                padding: 5px 12px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🗣️ Диалекты народов России</h1>
+    <p>Языковое богатство: от севернорусского оканья до говоров коренных народов</p>
+</div>
+
+<div class="nav">
+    <div class="container">
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#russian">Русские диалекты</a></li>
+            <li><a href="#examples">Примеры речи</a></li>
+            <li><a href="#disappear">Почему исчезают?</a></li>
+            <li><a href="#help">Как помочь?</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <!-- ГЛАВНАЯ СТРАНИЦА -->
+    <div id="main" class="section">
+        <h2>📖 Живое слово земли русской</h2>
+        <p style="font-size:1.1rem; margin-bottom:15px;"><strong>Диалекты</strong> — это не просто «неправильное произношение», а целые языковые миры, хранящие историю, традиции и уникальное мировосприятие народа. В Российской Федерации насчитываются сотни языков и тысячи говоров. Русский язык сам распадается на северное наречие, южное и среднерусские переходные говоры. А языки коренных народов (тюркские, финно-угорские, кавказские, палеоазиатские) демонстрируют удивительное разнообразие, часто превышающее диалектную фрагментацию русского языка.</p>
+        
+        <div style="background: #f2ecd9; border-radius: 30px; padding: 18px; margin: 25px 0; text-align:center;">
+    <img src="karta.jpg" alt="Карта диалектов народов России" style="max-width:100%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <p style="margin-top: 12px; font-size:0.9rem;">🗺️ Диалектные зоны России.</p>
+</div>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: space-between;">
+            <div style="flex:1; background:#f9f2e4; border-radius:24px; padding:15px;"><strong>🎯 Цель сайта</strong><br>Представить материал о диалектах в наглядной структурированной форме, привлечь внимание к проблеме исчезновения говоров.</div>
+            <div style="flex:1; background:#f9f2e4; border-radius:24px; padding:15px;"><strong>📚 Задачи</strong><br>Систематизировать информацию, проиллюстрировать различия, создать ресурс для уроков и краеведения.</div>
+        </div>
+    </div>
+
+    <!-- ДИАЛЕКТЫ НАРОДОВ РОССИИ -->
+   <div id="russian" class="section">
+        <h2>Русские диалекты: северное и южное наречия</h2>
+        <p>В основе русского литературного языка лежат среднерусские говоры, сочетающие черты севера и юга. Но настоящая диалектная картина намного богаче. <strong>Одно и то же понятие на Севере и Юге передаётся разными словами и звучанием.</strong></p>
+
+        <h3>🗻 Севернорусское наречие</h3>
+        <p><strong>Регионы:</strong> Карелия, Архангельская обл., Вологодчина, Урал, Сибирь.<br>
+        <strong>Ключевые черты:</strong> <em>оканье</em> (произношение [о] в безударных слогах: м[о]л[о]ко), <em>цоканье/чоканье</em>, твёрдый [г].<br>
+        <strong>Примеры слов:</strong> <em>изба</em> (дом), <em>петух</em> (птица), <em>хорошо</em> (одобрительно), <em>ухват</em> (кухонная утварь).</p>
+
+        <h3>🌾 Южнорусское наречие</h3>
+        <p><strong>Регионы:</strong> Тульская, Рязанская, Курская, казачьи области.<br>
+        <strong>Черты:</strong> <em>аканье</em>, <em>яканье</em>, фрикативный мягкий [ɣ] (как украинское).<br>
+        <strong>Примеры слов:</strong> <em>хата</em> (дом), <em>кочет</em> (петух), <em>добре</em> (хорошо), <em>рогач</em> (ухват).</p>
+
+        <h3>📊 Таблица: одно понятие — разные диалектные слова</h3>
+        <table>
+            <tr><th>Понятие (лит. русский)</th><th>Севернорусское слово</th><th>Южнорусское слово</th></tr>
+            <tr><td>дом, жилище</td><td><strong>изба</strong></td><td><strong>хата</strong></td></tr>
+            <tr><td>петух</td><td><strong>петух</strong> (или пе́вень)</td><td><strong>кочет</strong></td></tr>
+            <tr><td>хорошо, красиво</td><td><strong>баско</strong></td><td><strong>добре</strong></td></tr>
+            <tr><td>ухват (для печи)</td><td><strong>ухват</strong> (или рогач)</td><td><strong>рогач</strong></td></tr>
+            <tr><td>огород</td><td><strong>огород</strong></td><td><strong>городьба</strong></td></tr>
+            <tr><td>говорить, разговаривать</td><td><strong>баять</strong></td><td><strong>балакать</strong></td></tr>
+        </table>
+        
+        <div class="dictionary-list">
+            <p><strong>🗣️ Сравнительный словарь (одно значение — разное звучание):</strong><br>
+            • «Хорошо»: на Севере — <strong>баско</strong>, на Юге — <strong>добре</strong>.<br>
+            • «Петух»: на Севере — <strong>петух</strong> (или певень), на Юге — <strong>кочет</strong>.<br>
+            • «Дом»: на Севере — <strong>изба</strong>, на Юге — <strong>хата</strong>.<br>
+            • «Ухват»: на Севере — <strong>ухват</strong>, на Юге — <strong>рогач</strong>.<br>
+            • «Говорить»: на Севере — <strong>баять</strong>, на Юге — <strong>балакать</strong>.<br>
+            • «Красивый»: на Севере — <strong>баской</strong>, на Юге — <strong>вродный</strong> (в рязанских говорах).</p>
+            <p style="margin-top: 12px; background: #e9e0cf; padding: 10px; border-radius: 20px;"><strong>🎧 Пример фразы:</strong> «Петух красиво поёт» → по-северному: «<em>Петух баско поёт</em>»; по-южному: «<em>Кочет добре співае</em>» (с мягким украинским [г]).</p>
+        </div>
+    </div>
+
+    <!-- ПРИМЕРЫ ДИАЛЕКТНОЙ РЕЧИ -->
+   <!-- ПРИМЕРЫ ДИАЛЕКТНОЙ РЕЧИ -->
+    <div id="examples" class="section">
+        <h2>📝 Словарь диалектных слов по регионам</h2>
+        <p>Одно и то же понятие в разных уголках России передаётся по-своему. Ниже — подборка уникальных слов и выражений из семи диалектных зон.</p>
+
+        <!-- Блок 1: Севернорусские говоры -->
+        <div style="background: #eef3ea; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #2d6a4f;">
+            <h3 style="color: #2d6a4f; margin-top: 0;">❄️ Севернорусские говоры (Архангельская, Вологодская, Карелия)</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Диалектное слово</th><th>Значение (лит. русский)</th><th>Пример в речи</th></tr>
+                <tr><td><strong>баско</strong></td><td>хорошо, красиво</td><td>«У нас в лесу баско — грибов полно!»</td></tr>
+                <tr><td><strong>зипун</strong></td><td>крестьянский кафтан</td><td>«Надел зипун да пошёл в поле»</td></tr>
+                <tr><td><strong>рогач</strong></td><td>ухват для чугунка</td><td>«Подцепи-ка рогачом чугунок»</td></tr>
+                <tr><td><strong>пе́вень</strong></td><td>петух</td><td>«Певень спозаранку горло дерёт»</td></tr>
+                <tr><td><strong>ве́кша</strong></td><td>белка</td><td>«Векша по ёлкам скачет»</td></tr>
+                <tr><td><strong>утира́льник</strong></td><td>полотенце</td><td>«Подай утиральник с гвоздя»</td></tr>
+            </table>
+        </div>
+
+        <!-- Блок 2: Южнорусские говоры -->
+        <div style="background: #fef0e0; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #b87b4f;">
+            <h3 style="color: #b87b4f; margin-top: 0;">🌻 Южнорусские говоры (Рязанская, Курская, Воронежская, Дон)</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Диалектное слово</th><th>Значение (лит. русский)</th><th>Пример в речи</th></tr>
+                <tr><td><strong>добре́</strong></td><td>хорошо</td><td>«Добре́ сделал, сынок!»</td></tr>
+                <tr><td><strong>ко́чет</strong></td><td>петух</td><td>«Кочет поутру всех разбудил»</td></tr>
+                <tr><td><strong>хата</strong></td><td>изба, дом</td><td>«В хате печь топится»</td></tr>
+                <tr><td><strong>буря́к</strong></td><td>свёкла</td><td>«Борщ без буряка не тот»</td></tr>
+                <tr><td><strong>гле́чик</strong></td><td>глиняный кувшин</td><td>«Молоко в глечике стоит»</td></tr>
+                <tr><td><strong>бала́кать</strong></td><td>говорить, разговаривать</td><td>«Они меж собой балакают»</td></tr>
+            </table>
+        </div>
+
+        <!-- Блок 3: Татарские диалекты -->
+        <div style="background: #e3f0f5; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #2c7da0;">
+            <h3 style="color: #2c7da0; margin-top: 0;">🐎 Татарские диалекты (средний, мишарский, сибирский)</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Диалект</th><th>Слово</th><th>Значение</th><th>Примечание</th></tr>
+                <tr><td>Средний (казанский)</td><td><strong>әйбәт</strong></td><td>хорошо</td><td>литературная норма</td></tr>
+                <tr><td>Мишарский (западный)</td><td><strong>цәй</strong></td><td>чай (вместо чәй)</td><td>цоканье, как в севернорусском</td></tr>
+                <tr><td>Мишарский</td><td><strong>урам</strong></td><td>улица</td><td>архаичное произношение</td></tr>
+                <tr><td>Сибирско-татарский</td><td><strong>пайва</strong></td><td>лошадь</td><td>заимствование из хантыйского</td></tr>
+                <tr><td>Сибирско-татарский</td><td><strong>су</strong></td><td>вода</td><td>вместо лит. «су́» (с другим тоном)</td></tr>
+            </table>
+        </div>
+
+        <!-- Блок 4: Финно-угорские (мордовские) -->
+        <div style="background: #f2e6d5; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #8b5a2b;">
+            <h3 style="color: #8b5a2b; margin-top: 0;">🌲 Мордовские языки: эрзя и мокша</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Понятие</th><th>По-эрзянски</th><th>По-мокшански</th></tr>
+                <tr><td>дом</td><td>кудо</td><td>куд</td></tr>
+                <tr><td>в дом (куда?)</td><td>кудос</td><td>куду</td></tr>
+                <tr><td>вода</td><td>ведь</td><td>веда</td></tr>
+                <tr><td>мать</td><td>ава</td><td>тядя</td></tr>
+                <tr><td>отец</td><td>тядя</td><td>аля</td></tr>
+            </table>
+            <p style="margin-top: 12px;"><em>❗ Эрзя и мокша — два родственных языка, но носители часто переходят на русский, чтобы понять друг друга.</em></p>
+        </div>
+
+        <!-- Блок 5: Кавказские языки (аварский) -->
+        <div style="background: #f5e6e8; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #9e2a6b;">
+            <h3 style="color: #9e2a6b; margin-top: 0;">⛰️ Аварский язык (Дагестан) — пример различий диалектов</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Понятие</th><th>Литературный аварский</th><th>Батлухский диалект</th><th>Карахский диалект</th></tr>
+                <tr><td>вода</td><td>лъим</td><td>лъин</td><td>лъем</td></tr>
+                <tr><td>идти</td><td>ине</td><td>ине (с другим ударением)</td><td>уне</td></tr>
+                <tr><td>дом</td><td>гьоркьохъ</td><td>гьоркьо</td><td>гьоркьохъ (другая интонация)</td></tr>
+            </table>
+            <p><em>📌 В аварском — до 20 падежей, и в разных диалектах их набор может отличаться.</em></p>
+        </div>
+
+        <!-- Блок 6: Сибирские народы (хантыйский, эвенкийский) -->
+        <div style="background: #e1f0ea; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #2f855a;">
+            <h3 style="color: #2f855a; margin-top: 0;">🦌 Хантыйский язык (северные и восточные диалекты)</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Понятие</th><th>Северный диалект</th><th>Восточный диалект</th><th>Южный (почти исчез)</th></tr>
+                <tr><td>медведь</td><td>вой</td><td>кат-воч</td><td>от</td></tr>
+                <tr><td>рыба</td><td>хӯл</td><td>кул</td><td>хўл</td></tr>
+                <tr><td>олень</td><td>вуй</td><td>воч</td><td>вош</td></tr>
+                <tr><td>вода</td><td>иӈк</td><td>йиӈк</td><td>иӈк (с другим тоном)</td></tr>
+            </table>
+            <p><em>❗ Северные и восточные ханты не понимают друг друга без переводчика.</em></p>
+        </div>
+
+        <!-- Блок 7: Чукотско-камчатские языки -->
+        <div style="background: #f9f0c1; border-radius: 24px; padding: 20px; margin: 25px 0; border-left: 8px solid #bc6c25;">
+            <h3 style="color: #bc6c25; margin-top: 0;">❄️ Чукотский язык (оленеводческая лексика)</h3>
+            <table style="width: 100%; background: #fffef7;">
+                <tr><th>Диалектное слово</th><th>Значение</th><th>Примечание</th></tr>
+                <tr><td><strong>ӄораӈы</strong></td><td>олень</td><td>основное животное в хозяйстве</td></tr>
+                <tr><td><strong>тыӈаӄаӄ</strong></td><td>олень-вожак</td><td>уникальное понятие</td></tr>
+                <tr><td><strong>вытвыт</strong></td><td>олень-трёхлетка</td><td>детализация возраста оленя</td></tr>
+                <tr><td><strong>ӄэԓи</strong></td><td>существовать, жить</td><td>в разных диалектах — разное произношение</td></tr>
+            </table>
+            <p><em>🐾 В чукотском языке десятки слов для обозначения оленей в зависимости от пола, возраста и окраса.</em></p>
+        </div>
+    </div>
+
+    <!-- ПОЧЕМУ ИСЧЕЗАЮТ ДИАЛЕКТЫ? -->
+    <div id="disappear" class="section">
+        <h2>⚠️ Почему исчезают диалекты?</h2>
+        <p>Диалектное разнообразие России тает с каждым поколением. Основные угрозы:</p>
+        <ul style="margin-left: 30px; margin-bottom: 20px;">
+            <li><strong>Урбанизация и миграция</strong> — молодёжь уезжает из сёл в города, где говорят на литературном языке.</li>
+            <li><strong>Влияние СМИ и интернета</strong> — стандартный русский язык доминирует в телевидении и соцсетях.</li>
+            <li><strong>Престиж литературного языка</strong> — диалекты часто воспринимаются как «неграмотная» речь.</li>
+            <li><strong>Сокращение числа носителей малых языков</strong> — многие языки коренных народов находятся на грани исчезновения (кетский — менее 200 чел., некоторые говоры хантыйского почти исчезли).</li>
+        </ul>
+        <p>📉 <strong>Статистический факт:</strong> по данным ЮНЕСКО, более 10 языков России находятся в критической опасности, среди них алеутский, керекский, орочский, а также многие диалекты эвенкийского и юкагирского языков.</p>
+        <p>Ценность диалектов — это не только лингвистические редкости, но и тысячелетняя история, традиционное знание природы, уникальная этническая идентичность.</p>
+    </div>
+
+    <!-- КАК ПОМОЧЬ СОХРАНИТЬ ДИАЛЕКТЫ -->
+    <div id="help" class="section">
+        <h2>🤝 Как помочь сохранить диалекты?</h2>
+        <p>Каждый из нас может внести вклад в сбережение этого живого наследия. Вот несколько практических шагов:</p>
+        <div style="background: #e7dfce; border-radius: 28px; padding: 20px; margin: 20px 0;">
+            <p>✅ <strong>Записывайте речь старших родственников</strong> — расспросите бабушек и дедушек о местных словах, зафиксируйте на диктофон.<br>
+            ✅ <strong>Используйте и распространяйте локальные слова</strong> в общении со сверстниками, на уроках.<br>
+            ✅ <strong>Участвуйте в краеведческих проектах</strong> и фольклорных экспедициях.<br>
+            ✅ <strong>Создавайте мини-словарики</strong> своего села или города — публикуйте в соцсетях.<br>
+            ✅ <strong>Поддерживайте учебные инициативы</strong> по изучению языков коренных народов (кружки, факультативы).</p>
+        </div>
+        <p>Наш сайт — тоже пример такой помощи: он может использоваться на уроках русского языка, литературы, краеведения, а также для внеклассных мероприятий. Созданный продукт — полноценный веб-ресурс в цветовой гамме «слоновой кости» с терракотовыми акцентами, единой навигацией и адаптивным дизайном.</p>
+        <p><strong>🔮 Перспективы развития:</strong> добавление аудиозаписей живой диалектной речи, расширенные словари, интерактивная карта диалектов и размещение в открытом доступе для учителей и школьников.</p>
+    </div>
+
+    <div class="footnote">
+        © 202616:25 26.04.2026 Проект «Диалекты народов России» | Информационный сайт, созданный на основе теоретического и практического исследования для проектной работы. 
+        <br>Сайт выполнен в HTML.
+    </div>
+</div>
+
+</body>
+</html>
